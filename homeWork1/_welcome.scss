@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.conteiner {
+  max-width: 1213px;
+  margin: 0 auto;
+  height: 100%;
+}
+.star-first{
+    width: 57px;
+    height: 57px;
+    top: 94px;
+    left: 63px;
+    position: absolute;
+}
+.star-second{
+    width: 35px;
+    height: 35px;
+    top: 69px;
+    left: 156px;
+    position: absolute;
+}
+.star-fourth{
+    position: absolute;
+    width: 37px;
+   height: 37px;
+  top: 538px;
+  left: 948px;
+}
+.star-fifth{
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    top: 568px;
+    left: 1013px;
+
+}
+.section-welcome {
+  height: 800px;
+  background: #E1FF8F;
+  position: relative;
+  background-image:url('../homeWork1/img/Group\ 1597880565.png') ;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+.welcome-content {
+    width: 769px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px; 
+}
+.welcome-content__heading {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    color: #202027;
+    width: 769px;
+    height: 156px;
+
+}
+.welcome-content__text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #202027;
+}
+.span{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.welcome-content__button {
+    width: 247px;
+    height: 66px;
+    padding: 16px 28px 16px 28px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #202027;
+
+    &:hover{
+    color:  #202027;
+    background: #FFFFFF;
+    }
+}
+
+
+.welcome-links {
+    width: 100%;
+    background-color: #BCEC30;
+    padding: 39px 0px;
+    overflow: hidden;
+    position: relative;
+
+}
+.welcome-links-anim {
+    width: 3220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: road 20s linear infinite;
+}
+
+
+.welcome-link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    color: black;
+    text-transform: uppercase;
+
+}
+.welcome-link::after {
+    content: '';
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+    background-image: url('../homeWork1/img/Star.png');
+    background-size: cover;
+    position: absolute;
+}
