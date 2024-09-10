@@ -10,45 +10,12 @@
   height: 100%;
 }
 
-.star-first {
-  width: 57px;
-  height: 57px;
-  top: 94px;
-  left: 63px;
-  position: absolute;
-}
-
-.star-second {
-  width: 35px;
-  height: 35px;
-  top: 69px;
-  left: 156px;
-  position: absolute;
-}
-
-.star-fourth {
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  top: 538px;
-  left: 948px;
-}
-
-.star-fifth {
-  position: absolute;
-  width: 83px;
-  height: 83px;
-  top: 568px;
-  left: 1013px;
-}
-
 .section-welcome {
   height: 800px;
   background: #E1FF8F;
-  position: relative;
-  background-image: url("../homeWork1/img/Group 1597880565.png");
+  background-image: url("../homeWork1/img/bog-1.png");
+  background-position: left 95px top -330px;
   background-repeat: no-repeat;
-  background-position: 100% 0;
 }
 
 .welcome-wrapper {
@@ -119,6 +86,7 @@
   padding: 39px 0px;
   overflow: hidden;
   position: relative;
+  z-index: 4;
 }
 
 .welcome-links-anim {
@@ -155,12 +123,12 @@
 }
 
 .section-game {
-  height: 1500px;
+  min-height: 1500px;
   background-color: black;
-  position: relative;
-  background-image: url("../homeWork1/img/Star 6.png");
+  background-image: url("../homeWork1/img/bog-2.png");
   background-repeat: no-repeat;
-  background-position: left 100% bottom 85%;
+  background-position: left 50px bottom 83%;
+  width: 100%;
 }
 
 .star-second-game {
@@ -268,6 +236,7 @@
   background: #F7F7F7;
   border-radius: 50px;
 }
+
 .name-game {
   font-family: Montserrat;
   font-size: 32px;
@@ -278,6 +247,7 @@
   color: #000;
   max-width: 214px;
 }
+
 @keyframes road {
   0% {
     left: 0;
@@ -287,4 +257,113 @@
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+@media (max-width: 400px) {
+  .conteiner {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-welcome {
+    height: 800px;
+    min-width: 400px;
+    background: #E1FF8F;
+    background-image: url("../homeWork1/img/Group 1.png");
+    background-position: 12px -118px;
+    background-repeat: no-repeat;
+  }
+  .welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    gap: 36px;
+  }
+  .welcome-content__heading {
+    font-family: Montserrat;
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+  }
+  .welcome-content__text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #202027;
+  }
+  .span {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .welcome-content__button {
+    width: 285px;
+    height: 55px;
+    padding: 16px 28px 16px 28px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.67px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #202027;
+  }
+  .welcome-content__button:hover {
+    color: #202027;
+    background: #FFFFFF;
+  }
+  .welcome-links {
+    width: 100%;
+    background-color: #BCEC30;
+    padding: 39px 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+  }
+  .welcome-links-anim {
+    width: 3220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: road 20s linear infinite;
+  }
+  .welcome-link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    color: black;
+    text-transform: uppercase;
+  }
+  .welcome-link::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+    background-image: url("../homeWork1/img/Star.png");
+    background-size: cover;
+    position: absolute;
+  }
+}/*# sourceMappingURL=index.css.map */

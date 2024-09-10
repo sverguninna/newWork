@@ -8,43 +8,16 @@
   margin: 0 auto;
   height: 100%;
 }
-.star-first{
-    width: 57px;
-    height: 57px;
-    top: 94px;
-    left: 63px;
-    position: absolute;
-}
-.star-second{
-    width: 35px;
-    height: 35px;
-    top: 69px;
-    left: 156px;
-    position: absolute;
-}
-.star-fourth{
-    position: absolute;
-    width: 37px;
-   height: 37px;
-  top: 538px;
-  left: 948px;
-}
-.star-fifth{
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    top: 568px;
-    left: 1013px;
 
-}
 .section-welcome {
   height: 800px;
   background: #E1FF8F;
-  position: relative;
-  background-image:url('../homeWork1/img/Group\ 1597880565.png') ;
+  background-image: url('../homeWork1/img/bog-1.png');
+  background-position: left 95px top -330px;
   background-repeat: no-repeat;
-  background-position: 100% 0;
 }
+
+
 .welcome-wrapper {
     display: flex;
     flex-direction: column;
@@ -111,6 +84,7 @@
     padding: 39px 0px;
     overflow: hidden;
     position: relative;
+    z-index: 4;
 
 }
 .welcome-links-anim {
