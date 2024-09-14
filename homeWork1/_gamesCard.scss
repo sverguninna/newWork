@@ -1,10 +1,10 @@
 .section-game {
-    height: 1500px;
+    min-height: 1500px;
     background-color: black;
-    position:relative;
-    background-image: url('../homeWork1/img/Star\ 6.png');
+    background-image: url('../homeWork1/img/bog-2.png');
     background-repeat: no-repeat;
-    background-position: left 100% bottom 85%;
+    background-position: left 50px bottom 83%;
+    width: 100%;
 
 }
 .star-second-game {
@@ -103,7 +103,7 @@
     padding: 8px 16px 10px 16px;
     background: #F7F7F7;
     border-radius: 50px;
-
+ }
 .name-game {
     font-family: Montserrat;
     font-size: 32px;
@@ -125,4 +125,4 @@
        left: -3000px;
     }
 }
-}/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map */
