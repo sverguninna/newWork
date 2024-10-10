@@ -360,7 +360,7 @@
   }
   .section-welcome {
     height: 800px;
-    min-width: 600px;
+    max-width: 600px;
     background: #E1FF8F;
     background-image: url("../homeWork1/img/Group 1.png");
     background-position: 170px -118px;
