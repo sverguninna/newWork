@@ -99,3 +99,4 @@ for (let i = 0; i < 5; i++) {
 const sumArr15 = arr15.reduce((total, num)=> total + num, 0)
 
 console.log(sumArr15);
+

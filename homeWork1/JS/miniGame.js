@@ -8,7 +8,7 @@ function guessNumber(){
     let userNumber = prompt('Введите число')
     let result = false 
 
-   while (result === false ) { 
+   while (!result) { 
 
     if (userNumber > randomNumber ) {
         userNumber = prompt ('число большое чем нужно, попробуй заново')
@@ -27,7 +27,7 @@ const buttonSolveExample = document.getElementById('game2')
 console.log(buttonSolveExample);
 buttonSolveExample.addEventListener('click', SolverExample )
 
-let a = ()=>{return Math.floor(Math.random()*10)+1  }
+let a = ()=>{return Math.floor(Math.random()*10)+1 }
 let b = ()=>{return Math.floor(Math.random()*10)+1}
 
 
@@ -70,3 +70,49 @@ function generateExample(a , b ){
  let Example = boxExample[randomIndex];
  return Example }
 
+ const buttonTurnText = document.getElementById('game3')
+ console.log(buttonTurnText);
+
+ buttonTurnText.addEventListener('click', TurnText)
+
+ function TurnText() {
+ let question = prompt('Введите текст');
+ let str = question.split('').reverse().join('')
+ alert(str);  
+}
+
+
+const buttonQuiz = document.getElementById('game4')
+buttonQuiz.addEventListener('click', Quiz)
+
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2 // номер правильного ответа
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+
+function Quiz() {
+    let trueAnswer = 0;
+    quiz.forEach(element => { 
+       let answer = prompt(`${element.question} : ${element.options.join('; ')}`)
+       if (+answer === element.correctAnswer || element.options[1].toLowerCase().includes(answer.toLowerCase())) {
+        trueAnswer++
+       }
+    });
+    alert(`Правильных ответов ${trueAnswer}`)
+}
+
+
+ 
