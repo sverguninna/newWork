@@ -23,7 +23,7 @@ console.log(random());
 
 function makeArr(n) {
     let arr = []
-    for (let i = 0; i < n / 2; i++) {
+    for (let i = 0; i <  Math.floor(n / 2); i++) {
         arr.push(Math.floor(Math.random() * 10))
     }
     return arr
@@ -38,12 +38,16 @@ function getRandomInt(min, max) {
 }
 console.log(getRandomInt(5, 15));
 
+function getFutureDate(daysAhead) {
+    const date = new Date();
+    date.setDate(date.getDate() + daysAhead);
+    return date
+  }
+  
+  const fourDays = getFutureDate(73)
+  console.log(fourDays)
+
 let currentDate = new Date();
-console.log(currentDate);
-let days73 = 73 * 24 * 60 * 60 * 1000;
-let searchDate = currentDate + days73;
-let after73days = new Date(searchDate)
-console.log(after73days);
 
 /* Дата: [число] [месяц на русском] [год] — это [день недели на русском].
 Время: [часы]:[минуты]:[секунды] */
