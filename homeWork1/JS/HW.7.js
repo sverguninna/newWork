@@ -49,7 +49,7 @@ console.log(after73days);
 Время: [часы]:[минуты]:[секунды] */
 
 const options = { weekday: 'long', year: 'numeric', month: 'long', 
-day: 'numeric' }; 
+day: 'numeric'}; 
 
 let strDate =`${currentDate.getDate() } ${currentDate.toLocaleDateString('ru-RU', {month: 'long'})} ${currentDate.getFullYear()} - это ${ currentDate.toLocaleDateString('ru-RU', {weekday: 'long'})}  Время : ${currentDate.getHours()} :${currentDate.getMinutes()}: ${currentDate.getSeconds()}`
 console.log(strDate);
