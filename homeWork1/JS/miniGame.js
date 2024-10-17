@@ -82,7 +82,7 @@ function generateExample(a , b ){
 }
 
 
-const buttonQuiz = document.getElementById('game4')
+const buttonQuiz = document.getElementById('game5')
 buttonQuiz.addEventListener('click', Quiz)
 
 const quiz = [
@@ -115,4 +115,42 @@ function Quiz() {
 }
 
 
+const buttonGameСomputer = document.getElementById('game4')
+buttonGameСomputer.addEventListener('click', gameComputer )
+
+function gameComputer() {
+    const arrGame = ['Камень','Hожници','Бумага'];
+    let index = Math.ceil( Math.random() * ( arrGame.length - 1 - 0) + 0 )
+    let compOp = arrGame[index]
+    usersOption = prompt("Выберети варианты ответа (Камень, Ножницы ,Бумага)")
+     while (usersOption !== null) {
+        console.log(usersOption);
+        if (usersOption === 'Камень' || usersOption === 'Ножницы' || usersOption === 'Бумага' ) {
+            alert(`Пользователь выбрал ${usersOption} компьютер выбрал ${compOp}. Результат ${variantsVictoryAndLose[compOp][usersOption]}`)
+            break
+        } else {
+             usersOption = prompt("Выберете один из вариантов ответа (Камень, Ножницы ,Бумага)")
+        } 
+     }
+}
+ 
+variantsVictoryAndLose = {
+    'Камень': {
+        'Камень': 'Ничья',
+        'Ножницы': 'Проиграли',
+        'Бумага': 'Выграли'
+    },
+    'Ножницы': {
+        'Камень': 'Выграли',
+        'Ножницы': 'Ничья',
+        'Бумага': 'Проиграли'
+    },
+    'Бумага': {
+        'Камень': 'Проиграли',
+        'Ножницы': 'Выграли',
+        'Бумага': 'Ничья'
+    }
+}
+
+console.log(variantsVictoryAndLose['Ножницы'])
  
