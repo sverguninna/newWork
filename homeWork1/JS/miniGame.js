@@ -154,3 +154,17 @@ variantsVictoryAndLose = {
 
 console.log(variantsVictoryAndLose['Ножницы'])
  
+const buttonGameColor = document.querySelector('.game6')
+const miniGames = document.querySelector('.mini-games')
+
+
+const gameColor  = document.getElementById("game-color" )
+const elm = document.querySelector('.mini-games')
+gameColor.addEventListener('click',full)
+function full(){
+    let x = parseInt(Math.random()*256)
+    let y = parseInt(Math.random()*256)
+    let z = parseInt(Math.random()*256)
+    let color = `rgb(${x},${y},${z})`
+    elm.style.backgroundColor = color
+}
