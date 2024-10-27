@@ -1,4 +1,4 @@
-const buttonGuessNumber = document.getElementById('game1')
+const buttonGuessNumber = document.getElementById('first-game')
 console.log(guessNumber);
 buttonGuessNumber.addEventListener('click', guessNumber )
 
@@ -6,24 +6,29 @@ function guessNumber(){
     let randomNumber = Math.floor(Math.random() * 100) + 1
     console.log(randomNumber);
     let userNumber = prompt('Введите число')
+    console.log(userNumber);
     let result = false 
 
-   while (!result) { 
+   while ( result !== false  ) { 
 
     if (userNumber > randomNumber ) {
         userNumber = prompt ('число большое чем нужно, попробуй заново')
+       
         result =  false
      } else if ( userNumber < randomNumber ) {
          userNumber = prompt ('число меньше чем нужно , попробуй заново')
          result = false
-     }else {
+     }else if (  userNumber === null ){
+        result = true
+     }
+     else  {
          alert('Молодец, верно!!!')
         result = true
     }
    }
 }
 
-const buttonSolveExample = document.getElementById('game2')
+const buttonSolveExample = document.getElementById('second-game')
 console.log(buttonSolveExample);
 buttonSolveExample.addEventListener('click', SolverExample )
 
@@ -35,7 +40,7 @@ function SolverExample() {
    let trueAnswer = 0 
    let falseAnswer = 0 
    let question = ''
-
+   alert('При дилении считаем до сотых')
    while (question !== 0 ) {
     let Example = generateExample(a(), b())
       question = Number(prompt(`${Example.example}`))
@@ -64,13 +69,13 @@ function generateExample(a , b ){
     answer: a * b },
      {
     example: `${a} / ${b}`,
-    answer: a / b }, ];
+    answer: Number((a / b ).toFixed(2))}, ];
 
  let randomIndex = Math.floor(Math.random() * (boxExample.length - 1));
  let Example = boxExample[randomIndex];
  return Example }
 
- const buttonTurnText = document.getElementById('game3')
+ const buttonTurnText = document.getElementById('third-game')
  console.log(buttonTurnText);
 
  buttonTurnText.addEventListener('click', TurnText)
@@ -82,7 +87,7 @@ function generateExample(a , b ){
 }
 
 
-const buttonQuiz = document.getElementById('game5')
+const buttonQuiz = document.getElementById('fifth-game')
 buttonQuiz.addEventListener('click', Quiz)
 
 const quiz = [
@@ -115,12 +120,12 @@ function Quiz() {
 }
 
 
-const buttonGameСomputer = document.getElementById('game4')
+const buttonGameСomputer = document.getElementById('fourth-game')
 buttonGameСomputer.addEventListener('click', gameComputer )
 
 function gameComputer() {
     const arrGame = ['Камень','Hожници','Бумага'];
-    let index = Math.ceil( Math.random() * ( arrGame.length - 1 - 0) + 0 )
+    let index = Math.ceil( Math.random() * ( arrGame.length - 1 ))
     let compOp = arrGame[index]
     usersOption = prompt("Выберети варианты ответа (Камень, Ножницы ,Бумага)")
      while (usersOption !== null) {
@@ -154,10 +159,6 @@ variantsVictoryAndLose = {
 
 console.log(variantsVictoryAndLose['Ножницы'])
  
-const buttonGameColor = document.querySelector('.game6')
-const miniGames = document.querySelector('.mini-games')
-
-
 const gameColor  = document.getElementById("game-color" )
 const elm = document.querySelector('.mini-games')
 gameColor.addEventListener('click',full)

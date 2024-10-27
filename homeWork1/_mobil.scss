@@ -7,12 +7,12 @@
     
     
     .section-welcome {
-        height: 800px;
         max-width: 600px;
         background: #E1FF8F;
         background-image: url('../homeWork1/img/Group\ 1.png');
-        background-position: 170px -118px;
+        background-position: 14px -106px;
         background-repeat: no-repeat;
+        background-size: cover;
     }
         
     .welcome-wrapper {
@@ -40,18 +40,19 @@
          text-align: center;
       }
       .welcome-content__text {
-          font-family: Montserrat;
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 32px;
-          text-align: left;
-          color: #202027;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
       }
       .span{
-          font-family: Montserrat;
-          font-size: 24px;
-          font-weight: 600;
-          line-height: 32px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: center;
+        
       }
       .welcome-content__button {
         width: 285px;
@@ -142,6 +143,7 @@
           font-weight: 700;
            line-height: 48.76px;
            color:#FFFFFF;
+           padding-top: 24px;
     }
     .card-mini {
         flex: 1 0 50%;
@@ -152,7 +154,7 @@
         transition: 0.5s;
         flex-direction: column;
     }
-    .card-mini__revers{
+    .card-mini_revers{
         flex-direction: column;
     }
     .card-header-mini {
@@ -167,11 +169,13 @@
     .game-link{
         text-decoration: none;
     }
-    .name-game{
+    .name-game-mini {
         font-family: Montserrat;
-         font-size: 32px;
-        font-weight: 700;
+       font-size: 32px;
+       font-weight: 700;
         line-height: 39.01px;
+       text-align: left;
+
     }
     .text-game-mini {
         font-family: Montserrat;
@@ -182,14 +186,14 @@
         
     }
     .button-mini{
-        width: 100%;
-        height: 66px;
+       width: 258px;
+       height: 55px;
         gap: 10px;
         border-radius: 60px;
         font-family: Montserrat;
-        font-size: 24px;
+        font-size:  16px;
         font-weight: 600;
-        line-height: 34.01px;
+        line-height: 22.66px;
         text-align: center;
         color: #FFFFFF;
         background: #202027;
