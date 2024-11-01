@@ -7,12 +7,12 @@
     
     
     .section-welcome {
-        height: 800px;
         max-width: 600px;
         background: #E1FF8F;
-        background-image: url('../homeWork1/img/Group\ 1.png');
-        background-position: 170px -118px;
+        background-image: url('./img/Group-mob.png');
+        background-position: 64px -99px;;
         background-repeat: no-repeat;
+        height: 700px;
     }
         
     .welcome-wrapper {
@@ -28,7 +28,7 @@
           align-items: center;
           justify-content: center;
           width: 343px;
-          gap: 36px;
+          gap: 24px;
     }
       .welcome-content__heading {
           font-family: Montserrat;
@@ -40,18 +40,20 @@
          text-align: center;
       }
       .welcome-content__text {
-          font-family: Montserrat;
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 32px;
-          text-align: left;
-          color: #202027;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
+        margin-bottom: 14px;
       }
       .span{
-          font-family: Montserrat;
-          font-size: 24px;
-          font-weight: 600;
-          line-height: 32px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: center;
+        
       }
       .welcome-content__button {
         width: 285px;
@@ -113,7 +115,7 @@
           width: 36px;
           height: 36px;
           margin-left: 100px;
-          background-image: url('../homeWork1/img/Star.png');
+          background-image: url('./img/Star.png');
           background-size: cover;
           position: absolute;
       }
@@ -142,6 +144,7 @@
           font-weight: 700;
            line-height: 48.76px;
            color:#FFFFFF;
+           padding-top: 24px;
     }
     .card-mini {
         flex: 1 0 50%;
@@ -152,7 +155,7 @@
         transition: 0.5s;
         flex-direction: column;
     }
-    .card-mini__revers{
+    .card-mini_revers{
         flex-direction: column;
     }
     .card-header-mini {
@@ -167,11 +170,13 @@
     .game-link{
         text-decoration: none;
     }
-    .name-game{
+    .name-game-mini {
         font-family: Montserrat;
-         font-size: 32px;
-        font-weight: 700;
+       font-size: 32px;
+       font-weight: 700;
         line-height: 39.01px;
+       text-align: left;
+
     }
     .text-game-mini {
         font-family: Montserrat;
@@ -179,17 +184,17 @@
         font-weight: 400;
         line-height: 19.5px;
         text-align: left;
-        
+        padding-bottom: 12px;
     }
     .button-mini{
-        width: 100%;
-        height: 66px;
+       width: 100%;
+       height: 55px;
         gap: 10px;
         border-radius: 60px;
         font-family: Montserrat;
-        font-size: 24px;
+        font-size:  16px;
         font-weight: 600;
-        line-height: 34.01px;
+        line-height: 22.66px;
         text-align: center;
         color: #FFFFFF;
         background: #202027;
@@ -217,7 +222,8 @@
         color: #000;
     }
     .mini{
-        gap: 32px;
+        gap: 16px;
+        padding: 29px;
     }
        
 }

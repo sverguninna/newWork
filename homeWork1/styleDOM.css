@@ -1,0 +1,150 @@
+.heading-one {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+.active{
+    display: none;
+}
+.button-heading {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #202027;
+}
+
+.text-two {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+.button-text {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0606dc;
+}
+
+.heading-three {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+.button-three {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3c0118;
+}
+
+.heading-four {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+.button-four {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #480103;
+}
+
+.description {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #e91111;
+}
+.text-five {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+.button-five {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #014833;
+}
+
+.button-Add-Text {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #874801;
+    margin-top: 24px;
+}
+.description2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #9de911;
+}
+.button-remove-Text{
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34.01px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #032104;
+    margin-top: 24px;
+}

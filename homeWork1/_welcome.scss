@@ -12,9 +12,10 @@
 .section-welcome {
   height: 800px;
   background: #E1FF8F;
-  background-image: url('../homeWork1/img/bog-1.png');
-  background-position: left 95px top -330px;
+  background-image: url('./img/Group-bac.png');
+  background-position: left 33px top -327px;;
   background-repeat: no-repeat;
+
 }
 
 
@@ -50,6 +51,8 @@
     line-height: 32px;
     text-align: left;
     color: #202027;
+    max-width: 720px;
+    margin-bottom: 24px;
 }
 .span{
     font-family: Montserrat;
@@ -70,6 +73,7 @@
     text-align: center;
     color: #FFFFFF;
     background: #202027;
+    text-decoration: none;
 
     &:hover{
     color:  #202027;
@@ -116,7 +120,7 @@
     width: 36px;
     height: 36px;
     margin-left: 100px;
-    background-image: url('../homeWork1/img/Star.png');
+    background-image: url('./img/Star.png');
     background-size: cover;
     position: absolute;
 }
