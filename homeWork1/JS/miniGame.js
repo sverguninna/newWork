@@ -71,7 +71,8 @@ function generateExample(a , b ){
     example: `${a} / ${b}`,
     answer: Number((a / b ).toFixed(2))}, ];
 
- let randomIndex = Math.floor(Math.random() * (boxExample.length - 1));
+ let randomIndex = Math.floor(Math.random() * boxExample.length );
+ console.log(randomIndex);
  let Example = boxExample[randomIndex];
  return Example }
 
